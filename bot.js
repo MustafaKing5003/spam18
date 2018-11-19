@@ -44,7 +44,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
       let args = message.content.split(" ").slice(1);
       let x = args.join(" ")
         if(message.content.startsWith(prefix + 'say')) {
-            message.channel.send('');
+            message.channel.send(''+x);
                 message.delete(999)
         }
         
