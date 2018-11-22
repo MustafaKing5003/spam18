@@ -1,6 +1,6 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "-";
+const prefix = "2";
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);  
@@ -33,7 +33,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
  
   
   client.on('message', message => {
-        var prefix = "-";
+        var prefix = "2";
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
       
